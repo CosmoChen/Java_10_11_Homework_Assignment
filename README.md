@@ -1,1 +1,1 @@
-# Java_7_8_Homework_Assignment
+# Java_7_8 Homework Assignment
