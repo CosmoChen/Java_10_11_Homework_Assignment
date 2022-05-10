@@ -61,9 +61,9 @@ Reentrant Locks also offer a fairness parameter, by which the lock would abide b
 A lock is a device for commanding access to an assigned resource by multiple threads. Usually, a lock grants exclusive access to a shared resource: just one thread at a flash can acquire the lock and everyone accesses to the shared resource requires that the lock be acquired first. Though, some locks may allow side-by-side access to a shared resource, as the read lock of a ReadWriteLock.
 ReadWriteLock is an interface. ReadWriteLock is implemented by ReentrantReadWriteLock Class which is in java.util.concurrent.locks package. So, to use a ReadWriteLock we have to use ReentrantReadWriteLock.
 -	Method
-1.	Lock readLock()
+1.	`Lock readLock()`
 If there is no thread that has requested the write lock and the lock for writing, then multiple threads can lock the lock for reading. It means multiple threads can read the data at the very moment, as long as there’s no thread to write the data or to update the data.
-2.	Lock writeLock()
+2.	`Lock writeLock()`
 If no threads are writing or reading, only one thread at a moment can lock the lock for writing. Other threads have to wait until the lock gets released. It means, only one thread can write the data at the very moment, and other threads have to wait.
 
 -	ReentrantReadWriteLock
